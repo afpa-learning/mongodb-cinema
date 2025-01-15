@@ -24,25 +24,23 @@ La console Compass est accessible de la façon suivante :
 
 ![Accès à la console Compass](./img/compass-console.gif)
 
-
 ## Série de requêtes
 
 1. Afficher tous les titres de films de "Spielberg" et du genre "Aventure".
 
-<details>
-    <summary>Indice</summary>
-  Pour rappel, la méthode `find` prend deux paramètres 
-    ```javascript
-    db.<nom-collection>.find(<query>, <projection>)
-    ```
-    - query : restriction sur les valeurs des documents
-    - projection : permet de choisir ce que l'on souhaite sélectionner
-
-    Voici un code à compléter :
-    ```javascript
-    db.movies.find({ genre : ???, director.last_name: "????" }, { title: ??? })
-    ```
-</details>
+> [!TIP]
+> Pour rappel, la méthode `find` prend deux paramètres  :
+>
+> ```javascript
+>   db.<nom-collection>.find(<query>, <projection>)
+> ```
+> - query : restriction sur les valeurs des documents
+> - projection : permet de choisir ce que l'on souhaite sélectionner
+>
+> Voici un code à compléter :
+> ```javascript
+>    db.movies.find({ genre : ???, director.last_name: "????" }, { title: ??? })
+> ```
 
 2. Afficher tous les titres des films parus en 2000.
 
@@ -120,18 +118,16 @@ Vous pourrez utiliser ici l'opérateur `$regex`.
 > - The Bridges of Madison County
 > ```
 
-<details>
-  <summary>Indice</summary>
-Vous pouvez déclarer et définir une variable JavaScript qui permet de récupérer l'ensemble des films :
-
-```javascript
-let recordset = ?????;
-while (recordset.hasNext()) {
-    let film = recordset.next();
-    print( "– " + film.title);
-}
-```
-</details>
+> [!TIP]
+> Vous pouvez déclarer et définir une variable JavaScript qui permet de récupérer l'ensemble des films :
+>
+> ```javascript
+>   let recordset = ?????;
+>   while (recordset.hasNext()) {
+>       let film = recordset.next();
+>        print( "– " + film.title);
+>   }
+>```
 
 21. Écrire dans la console de MongoDB Compass une instruction utilisant le curseur `forEach()` et qui permet d'afficher tous les titres des films du genre "Science-Fiction" avec un compteur de ligne.
 
@@ -160,7 +156,7 @@ Puis vous essayerez d'ajouter un acteur supplémentaire en utilisant l'interface
 > [!CAUTION]
 > Il n'y a pas de contrôle d'intégrité des données avec MongoDB, ainsi on pourrait rajouter autant de fois que
 > l'on souhaite l'actrice "Diane Keaton"
-> Si on veut avoir un contrôle des doublons on peut utiliser l’opérateur `$addToSet` à la place de $push.
+> Si on veut avoir un contrôle des doublons on peut utiliser l’opérateur `$addToSet` à la place de `$push`.
 
 24. Ajouter en une seule fois les 2 acteurs "John Cazale" né en 1935 et "Richard Conte" né en 1910 au film "Le Parrain". Pour cela vous devrez utiliser l’opérateur `$each` en ligne de commande.
 

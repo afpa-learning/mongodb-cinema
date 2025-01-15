@@ -12,7 +12,7 @@ En plus d'un SGBD il va vous falloir un client. Dans la suite vous allez vous co
 1. installation d'un client en ligne de commande
 2. installation du client graphique "Mongo Compass"
 
-Ci-dessous des détails concernant l'installation des outils
+Ci-dessous des détails concernant l'installation des outils.
 
 ## Déploiement d'une base de données locale
 
@@ -85,7 +85,7 @@ winget install -e --id MongoDB.Compass.Community
 
 Pour se connecter au SGBD en utilisant Compass suivez les indication données le GIF ci-dessous :
 
-![Gif de présentation à la connexion à une MongoDB avec Compass](img/compass-connection.gif)
+![Gif de présentation à la connexion à une MongoDB avec Compass](./todo/img/compass-connection.gif)
 
 > [!CAUTION]
 > Dans le cas de l'utilisation de Docker il vous faudra vous connecter avec l'utilisateur "root".
