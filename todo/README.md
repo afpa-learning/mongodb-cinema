@@ -46,13 +46,6 @@ La console Compass est accessible de la façon suivante :
 
 > [!TIP]
 > Indice
-> Pour rappel, la méthode `find` prend deux paramètres 
->   ```javascript
->       db.<nom-collection>.find(<query>, <projection>)
->   ```
->
-> - query : restriction sur les valeurs des documents
-> - projection : permet de choisir ce que l'on souhaite sélectionner
 >
 > Voici un code à compléter :
 > ```javascript
