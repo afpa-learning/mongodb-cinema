@@ -42,7 +42,8 @@ Il est possible de constater le bon fonctionnement de la base de données en con
 ![Service Windows](./img/service-windows.PNG)
 
 > [!CAUTION]
-> Par défaut avec l'installation locale la connexion à la base de données est **non sécurisée** (pas besoin de mot de passe)
+> Par défaut avec l'installation locale la connexion à la base de données est **non sécurisée** (pas besoin de mot de passe).
+>
 > Il est conseillé de créer un utilisateur par la suite.
 
 ## Installation de client
@@ -80,7 +81,7 @@ Le client graphique Mongo Compass peut être installé en utilisant la commande 
 winget install -e --id MongoDB.Compass.Community
 ```
 
-![Logo de Compass](./img/compass-logo.svg)
+<img src="./img/compass-logo.svg" alt="Logo de Compass" width="100">
 
 Pour se connecter au SGBD en utilisant Compass suivez les indication données le GIF ci-dessous :
 
@@ -88,7 +89,9 @@ Pour se connecter au SGBD en utilisant Compass suivez les indication données le
 
 > [!CAUTION]
 > Dans le cas de l'utilisation de Docker il vous faudra vous connecter avec l'utilisateur "root".
+>
 > Utilisateur : root
+>
 > Mot de passe : root
 
 ## Travail à effectuer 

@@ -46,35 +46,35 @@ La console Compass est accessible de la façon suivante :
 
 2. Afficher tous les titres des films parus en 2000.
 
-<details>
-  <summary>Indice</summary>
-  Pour rappel, la méthode `find` prend deux paramètres 
-    ```javascript
-    db.<nom-collection>.find(<query>, <projection>)
-    ```
+> [!TIP]
+> Indice
+> Pour rappel, la méthode `find` prend deux paramètres 
+>   ```javascript
+>       db.<nom-collection>.find(<query>, <projection>)
+>   ```
+>
+> - query : restriction sur les valeurs des documents
+> - projection : permet de choisir ce que l'on souhaite sélectionner
+>
+> Voici un code à compléter :
+> ```javascript
+>   db.movies.find({ year : ??? }, { title: ??? })
+> ```
 
-    - query : restriction sur les valeurs des documents
-    - projection : permet de choisir ce que l'on souhaite sélectionner
-
-    Voici un code à compléter :
-    ```javascript
-    db.movies.find({ year : ??? }, { title: ??? })
-    ```
 </details>
 
 3. Afficher tous les titres des films du genre "Action".
 
 4. Afficher la liste de tous les "genres" de la collection **sans doublon**.
 
-<details>
-  <summary>Indice</summary>
-  Inspirez vous de la méthode [distinct](https://www.mongodb.com/docs/manual/reference/method/db.collection.distinct/)
-
-  Voici un code à compléter :
-    ```javascript
-    db.movies.distinct(????)
-    ```
-</details>
+> [!TIP]
+> Indice
+>   Inspirez vous de la méthode [distinct](https://www.mongodb.com/docs/manual/reference/method/db.collection.distinct/)
+>
+>  Voici un code à compléter :
+>   ```javascript
+>       db.movies.distinct(????)
+>   ```
 
 5. Afficher les titres des films français et leur date de sortie.
 
