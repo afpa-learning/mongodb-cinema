@@ -93,6 +93,9 @@ La console Compass est accessible de la façon suivante :
 
 9. Afficher les titres des films sorties entre 1968 et 1978 inclus.
 
+> [!TIP]
+> [Voici un exemple d'utilisation de comparaison en MongoDB (à adapter au type que vous utilisez)](https://www.webhosting.uk.com/kb/how-to-find-objects-between-two-dates-in-mongodb/).
+
 ---
 
 10. Afficher les titres ainsi que l'année de sortie des films sorties avant l'année 1968 comprise (la même question mais année 1968 non comprise).
