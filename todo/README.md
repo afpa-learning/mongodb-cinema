@@ -39,7 +39,7 @@ La console Compass est accessible de la façon suivante :
 >
 > Voici un code à compléter :
 > ```javascript
->    db.movies.find({ genre : ???, director.last_name: "????" }, { title: ??? })
+>    db.movies.find({ "genre": ???, "director.last_name": "????" }, { "title": ??? })
 > ```
 
 ---
@@ -118,11 +118,11 @@ Vous pourrez aussi utiliser l'interface proposée par MongoDB Compass pour compo
 ---
 
 15. Compter le nombre de documents qui composent cette collection et pour lesquels l'année de sortie du film est supérieure ou égale à l'année 2000.
-Vous pourrez vous intéresser à la fonction `countDocuments()`.
+Vous pourrez vous intéresser à la fonction `count()`.
 
 ---
 
-16. Afficher le titre et l'année de sortie du films de la collection dont le résumé contient la chaîne de caractères : "la guerre du Vietnam".
+16. Afficher le titre et l'année de sortie du films de la collection dont le résumé contient la chaîne de caractères : "la Guerre du Vietnam".
 
 ---
 
@@ -167,7 +167,7 @@ Vous pourrez utiliser ici l'opérateur `$regex`.
 > [!TIP]
 > Résultat attendu :
 > ```
-> 1. titre du film : Eternal 
+> 1. titre du film : Eternal Sunshine of the Spotless Mind
 > 2. titre du film : 2001 l'Odyssée de l'espace
 > 3. titre du film : Blade Runner
 > 4. titre du film : E.T. l'extra-terrestre
@@ -215,7 +215,8 @@ Puis vous essayerez d'ajouter un acteur supplémentaire en utilisant l'interface
 
 > [!TIP]
 > Pour exporter les données en utilisant Compass : [Procédure d'export Compass](https://www.mongodb.com/docs/compass/current/import-export/)
->En ce qui concerne la ligne de commande, regardez du côté de `mongodump` : [Documentation mongodump](https://www.mongodb.com/docs/database-tools/mongodump/)
+>
+> En ce qui concerne la ligne de commande, regardez du côté de `mongodump` : [Documentation mongodump](https://www.mongodb.com/docs/database-tools/mongodump/)
 
 
 ### Les jointures en MongoDB
