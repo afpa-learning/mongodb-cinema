@@ -42,6 +42,8 @@ La console Compass est accessible de la façon suivante :
 >    db.movies.find({ genre : ???, director.last_name: "????" }, { title: ??? })
 > ```
 
+---
+
 2. Afficher tous les titres des films parus en 2000.
 
 > [!TIP]
@@ -54,7 +56,11 @@ La console Compass est accessible de la façon suivante :
 
 </details>
 
+---
+
 3. Afficher tous les titres des films du genre "Action".
+
+---
 
 4. Afficher la liste de tous les "genres" de la collection **sans doublon**.
 
@@ -67,39 +73,71 @@ La console Compass est accessible de la façon suivante :
 >       db.movies.distinct(????)
 >   ```
 
+---
+
 5. Afficher les titres des films français et leur date de sortie.
+
+---
 
 6. Afficher les titres des films et leur année de sortie dans lesquels "Uma Thurman" a joué.
 
+---
+
 7. Afficher le nom complet du réalisateur du film "Memento" ?
+
+---
 
 8. Afficher les noms et prénoms des acteurs qui ont joué dans "Apocalypse Now".
 
+---
+
 9. Afficher les titres des films sorties entre 1968 et 1978 inclus.
+
+---
 
 10. Afficher les titres ainsi que l'année de sortie des films sorties avant l'année 1968 comprise (la même question mais année 1968 non comprise).
 
+---
+
 11. La même question que la précédente mais en triant la sortie par années croissantes, par années décroissantes. Enfin, vous n'afficherez cette fois que 5 lignes.
+
+---
 
 12. Afficher tous les titres de films du genre "Action" ou "Aventure" ordonnés par genre.
 
+---
+
 13. Afficher tous les titres de film dont le réalisateur n'est pas "Tarantino".
+
+---
 
 14. Afficher le nombre de films par genre en utilisant ici l'agrégation et les opérateurs $group (équivalent du "Group By" en SQL) et $sum (équivalent du "SUM" en SQL).
 
 Vous pourrez aussi utiliser l'interface proposée par MongoDB Compass pour composer cette requête d'agrégation.
 
+---
+
 15. Compter le nombre de documents qui composent cette collection et pour lesquels l'année de sortie du film est supérieure ou égale à l'année 2000.
 Vous pourrez vous intéresser à la fonction `countDocuments()`.
 
+---
+
 16. Afficher le titre et l'année de sortie du films de la collection dont le résumé contient la chaîne de caractères : "la guerre du Vietnam".
 
+---
+
 17. Afficher les titres et l'année de sortie des films de la collection dans lesquels jouait l'acteur "Robert Redford".
+
+---
 
 18. Afficher uniquement les titres des films de la collection dont le champ "summary" contient la chaîne de caractères "famille ".
 Vous pourrez utiliser ici l'opérateur `$regex`.
 
+---
+
 19. Modifier l'année de sortie du Film "La Guerre des étoiles" en 1978 au lieu de 1977.
+
+---
 
 20. Écrire dans la console de MongoDB Compass un programme JavaScript qui permet d'afficher la liste des titres de films dans lesquels joue l'acteur "Clint Eastwood".
 
@@ -122,6 +160,8 @@ Vous pourrez utiliser ici l'opérateur `$regex`.
 >   }
 >```
 
+---
+
 21. Écrire dans la console de MongoDB Compass une instruction utilisant le curseur `forEach()` et qui permet d'afficher tous les titres des films du genre "Science-Fiction" avec un compteur de ligne.
 
 > [!TIP]
@@ -142,6 +182,8 @@ Vous pourrez utiliser ici l'opérateur `$regex`.
 
 22. Insérer le Film "Pixels" sortie en salle en 2005, c'est une Comédie US réalisée par Chris Columbus.
 
+---
+
 23. Ajouter l'actrice "Diane Keaton" née en 1946 au film "Le Parrain"
 Vous pourrez explorer une solution en utilisant l’opérateur `$push` en ligne de commande.
 Puis vous essayerez d'ajouter un acteur supplémentaire en utilisant l'interface graphique proposée par Compass.
@@ -151,11 +193,15 @@ Puis vous essayerez d'ajouter un acteur supplémentaire en utilisant l'interface
 > l'on souhaite l'actrice "Diane Keaton"
 > Si on veut avoir un contrôle des doublons on peut utiliser l’opérateur `$addToSet` à la place de `$push`.
 
+---
+
 24. Ajouter en une seule fois les 2 acteurs "John Cazale" né en 1935 et "Richard Conte" né en 1910 au film "Le Parrain". Pour cela vous devrez utiliser l’opérateur `$each` en ligne de commande.
 
 ### Suppression de données
 
 25. Supprimer le film "Impitoyable" de la collection.
+
+---
 
 26. Supprimer tous les films de l'année 1970.
 
@@ -167,12 +213,10 @@ Puis vous essayerez d'ajouter un acteur supplémentaire en utilisant l'interface
 
 28. Faire un dump de la base de données (fichier JSON) en utilisant MongoDB Compass, puis en utilisant la ligne de commande (Powershell).
 
-<details>
-  <summary>Indice</summary>
-  Pour exporter les données en utilisant Compass : [Procédure export Compass](https://www.mongodb.com/docs/compass/current/import-export/)
+> [!TIP]
+> Pour exporter les données en utilisant Compass : [Procédure d'export Compass](https://www.mongodb.com/docs/compass/current/import-export/)
+>En ce qui concerne la ligne de commande, regardez du côté de `mongodump` : [Documentation mongodump](https://www.mongodb.com/docs/database-tools/mongodump/)
 
-  En ce qui concerne la ligne de commande, regardez du côté de `mongodump` : [Documentation mongodump](https://www.mongodb.com/docs/database-tools/mongodump/)
-</details>
 
 ### Les jointures en MongoDB
 
@@ -209,5 +253,7 @@ Afin de tester les « jointures » avec MongoDB, vous devrez créer une agrégat
 
 1. Afficher le titre des films ainsi que le nombre d’entrées au box-office français pour les films concernés par cette jointure.
 Vous devrez chercher de la documentation sur l’opérateur `$lookup`.
+
+---
 
 2. Afficher la somme des entrées au Box-Office Français des films suivant le pays d’origine de leur production.
